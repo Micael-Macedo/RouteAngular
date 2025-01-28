@@ -4,13 +4,12 @@
     <ul id="nav-mobile" class="left hide-on-med-and">
       <li routerLinkActive="active" ><a routerLink="login">Login</a></li>
       <li routerLinkActive="active" ><a  routerLink="cursos">cursos</a></li>
-      <li routerLinkActive="active" ><a  [routerLink]="['curso', idCurso.value]">curso com Id</a></li>
+      <li routerLinkActive="active" ><a  [routerLink]="['curso', cursoId]">curso com Id</a></li>
     </ul>
   </div>
 </nav>
 <div class="container">
   <p>Entre com o id do curso</p>
-  {{ idCurso.value }}
-  <input type="text" #idCurso>
+  <input type="text" #idCurso (input)="cursoId = idCurso.value" />
   <router-outlet />
 </div>
