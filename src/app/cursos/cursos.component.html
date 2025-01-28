@@ -1,6 +1,8 @@
 <p>Lista de Cursos</p>
+<p>Página: {{ pagina }}</p>
 <div class="collection">
 @for (curso of cursos; track $index) {
     <a class="collection-item" [routerLink]="['/curso', curso.id]">{{ curso.nome }}</a>
   }
 </div>
+<button (click)="proximaPagina()">Proxima pagina</button>
