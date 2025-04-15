@@ -5,8 +5,8 @@ import { Curso } from '../../models/curso.model';
 import { CursosService } from '../cursos.service';
 
 @Component({
+  standalone: false,
   selector: 'app-curso-detalhe',
-  imports: [],
   templateUrl: './curso-detalhe.component.html',
   styleUrl: './curso-detalhe.component.scss'
 })

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-curso-nao-encontrado',
-  imports: [],
   templateUrl: './curso-nao-encontrado.component.html',
   styleUrl: './curso-nao-encontrado.component.scss'
 })

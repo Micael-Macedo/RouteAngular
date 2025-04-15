@@ -4,13 +4,15 @@ import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 
 export const AppRoutes: Routes = [
-  {path: "", component: HomeComponent},
+  {path: "home", component: HomeComponent},
   {path: "login", component: LoginComponent},
   {
     path: 'cursos',
     loadChildren: () =>
       import('./cursos/cursos.module').then((m) => m.CursosModule),
   },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: "**", redirectTo: ""}
 ];
 
 @NgModule({
