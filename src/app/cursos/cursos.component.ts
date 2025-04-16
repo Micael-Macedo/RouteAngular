@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
+  standalone: false,
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
   styleUrl: './cursos.component.scss'

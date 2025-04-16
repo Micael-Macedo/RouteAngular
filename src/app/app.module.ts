@@ -13,6 +13,11 @@ import { RouterLink, RouterModule } from '@angular/router';
     HomeComponent,
     LoginComponent,
   ],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

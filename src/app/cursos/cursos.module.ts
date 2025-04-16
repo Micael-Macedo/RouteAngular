@@ -10,7 +10,6 @@ import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-en
   imports: [
     CommonModule,
     CursosRoutingModule,
-    RouterLink
   ],
   declarations: [
     CursosComponent,
