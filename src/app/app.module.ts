@@ -5,14 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    LoginComponent,
-  ],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -22,7 +17,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterLink
+    RouterLink,
+    RouterLinkActive
   ],
   providers: [],
   bootstrap: [AppComponent]
