@@ -1,7 +1,7 @@
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { NgModule } from '@angular/core';
 
 export const AppRoutes: Routes = [
   {path: "", component: HomeComponent},
@@ -13,9 +13,9 @@ export const AppRoutes: Routes = [
   },
 ];
 
-@NgModule({
-  imports: [RouterModule.forChild(AppRoutes)], // Configura as rotas para o módulo
-  exports: [RouterModule], // Exporta o RouterModule para ser usado no módulo de cursos
-})
 
-export class AppRoutingModule {}
+@NgModule({
+  imports: [RouterModule.forRoot(AppRoutes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

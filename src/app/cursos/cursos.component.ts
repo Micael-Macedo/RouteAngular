@@ -1,12 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CursosService } from './cursos.service';
 import { Curso } from '../models/curso.model';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-cursos',
-  imports: [RouterLink],
   templateUrl: './cursos.component.html',
   styleUrl: './cursos.component.scss'
 })

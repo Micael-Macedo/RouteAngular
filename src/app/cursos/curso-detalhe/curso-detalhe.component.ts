@@ -5,10 +5,10 @@ import { Curso } from '../../models/curso.model';
 import { CursosService } from '../cursos.service';
 
 @Component({
+  standalone: false,
   selector: 'app-curso-detalhe',
-  imports: [],
   templateUrl: './curso-detalhe.component.html',
-  styleUrl: './curso-detalhe.component.scss'
+  styleUrl: './curso-detalhe.component.scss',
 })
 export class CursoDetalheComponent implements OnInit {
   id!: number
@@ -23,7 +23,7 @@ export class CursoDetalheComponent implements OnInit {
       this.id = parseInt(params['id'])
       this.curso = this.cursoService.getCurso(this.id)
       if(this.curso == null){
-        this.router.navigate(['naoEncontrado', this.id])
+        this.router.navigate(['/cursos/naoEncontrado', this.id])
       }
     })
   }

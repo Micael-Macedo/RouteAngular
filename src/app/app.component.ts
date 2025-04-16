@@ -1,14 +1,12 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
 @Component({
-  standalone: false,
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  @Input() cursoId: string = ""
-  constructor() {
-  }
+  title = 'RouteAngularModule';
 
+  @Input() cursoId: string = ""
 }
